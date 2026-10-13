@@ -118,34 +118,42 @@ const workSteps = [
   {
     id: 1,
     number: "01",
-    title: "Initial Consultation",
+    title: "Understanding Your Vision",
     description:
-      "We begin by understanding your ideas, lifestyle, design preferences, and requirements to create a beautiful and functional interior space.",
-    image: "/images/process-1.jpg",
+      "We begin by understanding your ideas, lifestyle, space requirements, design preferences, and budget to create an interior plan that reflects your vision.",
+    image: "/img/work-1.jpg",
   },
   {
     id: 2,
     number: "02",
     title: "Planning & Design",
     description:
-      "Our creative team develops detailed layouts, material selections, and design concepts that bring your vision to life.",
-    image: "/images/process-2.jpg",
+      "Our team develops thoughtful design concepts, space layouts, colour combinations, and material selections to create a balanced and functional interior.",
+    image: "/img/work-2.jpg",
   },
   {
     id: 3,
     number: "03",
-    title: "Project Execution",
+    title: "Material Selection",
     description:
-      "Our professional team carefully manages every stage of the interior project with quality materials and expert craftsmanship.",
-    image: "/images/process-3.jpg",
+      "Explore suitable interior products and finishes, including WPC louvers, PVC panels, fluted panels, soft panels, grass mats, and customized wallpapers.",
+    image: "/img/work-3.jpg",
   },
   {
     id: 4,
     number: "04",
-    title: "Smooth Delivery",
+    title: "Execution & Installation",
     description:
-      "We ensure your project is completed with attention to every detail, delivering a comfortable and beautifully designed space.",
-    image: "/images/process-4.jpg",
+      "We help bring your design plans to life with carefully coordinated interior work, product installation, and attention to the details that matter.",
+    image: "/img/work-4.jpg",
+  },
+  {
+    id: 5,
+    number: "05",
+    title: "Final Touches",
+    description:
+      "We focus on the finishing details to create a cohesive, stylish, and comfortable space that aligns with your expectations and design vision.",
+    image: "/img/work-5.jpg",
   },
 ];
 
@@ -213,7 +221,6 @@ const App = () => {
         </div>
       </section>
       {/* hero-carousel end */}
-
       {/* =============== ABOUT SECTION START =============== */}
       <section className="interior-about-section">
         <div className="container-lg">
@@ -287,13 +294,10 @@ const App = () => {
         </div>
       </section>
       {/* =============== ABOUT SECTION END =============== */}
-
       {/* =============== SERVICES SECTION START =============== */}
-
       <section className="services-section">
         <div className="services-container">
           <div className="services-header">
-      
             <div className="">
               <div className="interior-section-subtitle">
                 <span className="subtitle-mark"></span>
@@ -313,7 +317,7 @@ const App = () => {
                 tailored to your lifestyle, preferences, and needs.
               </p>
             </div>
-            
+
             <div className="services-navigation">
               <button
                 className="services-nav-btn services-prev"
@@ -406,20 +410,19 @@ const App = () => {
           </div>
         </div>
       </section>
-
       {/* =============== SERVICES SECTION END =============== */}
-
       {/* organization-sec start */}
+  
       <section className="organization-section">
         <div className="container-lg">
-          {/* Section heading */}
+          {/* Section Heading */}
           <div className="organization-heading">
             <span className="organization-subtitle">
               <span className="organization-subtitle-mark"></span>
-              SINCE 1986
+              OUR PROCESS
             </span>
 
-            <h2>How organization works</h2>
+            <h2>How We Bring Your Interior Dreams to Life</h2>
           </div>
 
           {/* Main Process Card */}
@@ -467,11 +470,9 @@ const App = () => {
           </div>
         </div>
       </section>
-
+      
       {/* organization-sec end */}
-
       {/* counter start */}
-
       {/* Product Section Start */}
       <section id="product-sec">
         <div className="container-lg product-sec">
@@ -508,7 +509,6 @@ const App = () => {
         </div>
       </section>
       {/* Product Section End */}
-
       {/* Advantages Section Start */}
       <section className="advantages-section">
         <div className="container-lg">
@@ -548,7 +548,6 @@ const App = () => {
         </div>
       </section>
       {/* Advantages Section End */}
-
       <Footer />
     </>
   );
