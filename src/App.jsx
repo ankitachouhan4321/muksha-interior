@@ -703,6 +703,7 @@ const App = () => {
       {/* usp-sec end */}
 
       {/* =============== ABOUT SECTION START =============== */}
+
       <section className="interior-about-section" id="about-sec">
         <div className="container-lg">
           <div className="row align-items-center g-4 g-xl-5">
@@ -711,21 +712,23 @@ const App = () => {
               <div className="interior-about-content">
                 <div className="interior-section-subtitle" data-aos="fade-left">
                   <span className="subtitle-mark"></span>
-                  WELCOME TO MUKSHA INTERIOR
+                  WELCOME TO MUKSHA INTERIOR & FOAM WALLPAPERS
                 </div>
 
                 <h2 className="interior-about-heading" data-aos="fade-left">
-                  Transforming Spaces with Style & Elegance
+                  Beautiful Interiors, Premium Wallpapers & Modern Designs
                 </h2>
 
                 <p className="interior-about-description" data-aos="fade-left">
-                  Muksha Interior specializes in creating beautiful, functional,
-                  and modern spaces tailored to your lifestyle and needs. From
-                  residential and commercial interior design to premium
-                  decorative products like WPC Louvers, PVC Panels, Fluted
-                  Panels, Soft Panels, Grass Mats, and Customized 3D Wallpapers,
-                  we bring creativity and quality together to transform every
-                  space.
+                  Muksha Interior & Foam Wallpapers is your destination for
+                  stylish interior design solutions and quality decorative
+                  products in Delhi. We offer residential, commercial, office,
+                  and kitchen interior design services along with a wide
+                  selection of wallpapers, foam wallpapers, WPC Louvers, PVC
+                  Panels, Fluted Panels, Soft Panels, Grass Mats, and Customized
+                  3D Wallpapers. Our goal is to help you create beautiful,
+                  comfortable, and functional spaces that reflect your personal
+                  style and requirements.
                 </p>
 
                 <a
@@ -747,7 +750,7 @@ const App = () => {
               <div className="interior-about-image">
                 <img
                   src="/img/about.png"
-                  alt="Muksha Interior modern residential interior design"
+                  alt="Muksha Interior & Foam Wallpapers - Interior Design and Wallpaper Shop in Delhi"
                   className="img-fluid"
                   loading="lazy"
                 />
@@ -782,6 +785,7 @@ const App = () => {
           </div>
         </div>
       </section>
+
       {/* =============== ABOUT SECTION END =============== */}
       {/* Product Section Start */}
       <section id="product-sec" className="py-lg-5 py-3">
@@ -807,7 +811,10 @@ const App = () => {
 
                 <div className="product-content text-center">
                   <h5>WPC Louvers</h5>
-                  <a href="https://wa.me/919220192901?text=Hello%20Muksha%20Interior%2C%20I%20am%20interested%20in%20your%20interior%20products" className="interior-nav-quote px-4 py-2">
+                  <a
+                    href="https://wa.me/919220192901?text=Hello%20Muksha%20Interior%2C%20I%20am%20interested%20in%20your%20interior%20products"
+                    className="interior-nav-quote px-4 py-2"
+                  >
                     Enquire Now
                     <i className="fa-brands fa-whatsapp "></i>
                   </a>
@@ -828,7 +835,10 @@ const App = () => {
 
                 <div className="product-content text-center">
                   <h5>PVC Panel</h5>
-                  <a href="https://wa.me/919220192901?text=Hello%20Muksha%20Interior%2C%20I%20am%20interested%20in%20your%20interior%20products" className="interior-nav-quote px-4 py-2">
+                  <a
+                    href="https://wa.me/919220192901?text=Hello%20Muksha%20Interior%2C%20I%20am%20interested%20in%20your%20interior%20products"
+                    className="interior-nav-quote px-4 py-2"
+                  >
                     Enquire Now
                     <i className="fa-brands fa-whatsapp "></i>
                   </a>
@@ -849,7 +859,10 @@ const App = () => {
 
                 <div className="product-content text-center">
                   <h5>Fluted Panel</h5>
-                  <a href="https://wa.me/919220192901?text=Hello%20Muksha%20Interior%2C%20I%20am%20interested%20in%20your%20interior%20products" className="interior-nav-quote px-4 py-2">
+                  <a
+                    href="https://wa.me/919220192901?text=Hello%20Muksha%20Interior%2C%20I%20am%20interested%20in%20your%20interior%20products"
+                    className="interior-nav-quote px-4 py-2"
+                  >
                     Enquire Now
                     <i className="fa-brands fa-whatsapp "></i>
                   </a>
@@ -870,7 +883,10 @@ const App = () => {
 
                 <div className="product-content text-center">
                   <h5>Soffit Panel</h5>
-                  <a href="https://wa.me/919220192901?text=Hello%20Muksha%20Interior%2C%20I%20am%20interested%20in%20your%20interior%20products" className="interior-nav-quote px-4 py-2">
+                  <a
+                    href="https://wa.me/919220192901?text=Hello%20Muksha%20Interior%2C%20I%20am%20interested%20in%20your%20interior%20products"
+                    className="interior-nav-quote px-4 py-2"
+                  >
                     Enquire Now
                     <i className="fa-brands fa-whatsapp "></i>
                   </a>
@@ -891,7 +907,10 @@ const App = () => {
 
                 <div className="product-content text-center">
                   <h5>Grass Mat</h5>
-                  <a href="https://wa.me/919220192901?text=Hello%20Muksha%20Interior%2C%20I%20am%20interested%20in%20your%20interior%20products" className="interior-nav-quote px-4 py-2">
+                  <a
+                    href="https://wa.me/919220192901?text=Hello%20Muksha%20Interior%2C%20I%20am%20interested%20in%20your%20interior%20products"
+                    className="interior-nav-quote px-4 py-2"
+                  >
                     Enquire Now
                     <i className="fa-brands fa-whatsapp "></i>
                   </a>
@@ -912,7 +931,10 @@ const App = () => {
 
                 <div className="product-content text-center">
                   <h5>Wallpaper</h5>
-                  <a href="https://wa.me/919220192901?text=Hello%20Muksha%20Interior%2C%20I%20am%20interested%20in%20your%20interior%20products" className="interior-nav-quote px-4 py-2">
+                  <a
+                    href="https://wa.me/919220192901?text=Hello%20Muksha%20Interior%2C%20I%20am%20interested%20in%20your%20interior%20products"
+                    className="interior-nav-quote px-4 py-2"
+                  >
                     Enquire Now
                     <i className="fa-brands fa-whatsapp "></i>
                   </a>
@@ -933,7 +955,10 @@ const App = () => {
 
                 <div className="product-content text-center">
                   <h5>Customized Wallpaper</h5>
-                  <a href="https://wa.me/919220192901?text=Hello%20Muksha%20Interior%2C%20I%20am%20interested%20in%20your%20interior%20products" className="interior-nav-quote px-4 py-2">
+                  <a
+                    href="https://wa.me/919220192901?text=Hello%20Muksha%20Interior%2C%20I%20am%20interested%20in%20your%20interior%20products"
+                    className="interior-nav-quote px-4 py-2"
+                  >
                     Enquire Now
                     <i className="fa-brands fa-whatsapp "></i>
                   </a>
@@ -953,7 +978,10 @@ const App = () => {
 
                 <div className="product-content text-center">
                   <h5>3D Wallpaper</h5>
-                  <a href="https://wa.me/919220192901?text=Hello%20Muksha%20Interior%2C%20I%20am%20interested%20in%20your%20interior%20products" className="interior-nav-quote px-4 py-2">
+                  <a
+                    href="https://wa.me/919220192901?text=Hello%20Muksha%20Interior%2C%20I%20am%20interested%20in%20your%20interior%20products"
+                    className="interior-nav-quote px-4 py-2"
+                  >
                     Enquire Now
                     <i className="fa-brands fa-whatsapp "></i>
                   </a>
@@ -1147,7 +1175,7 @@ const App = () => {
       <section className="advantages-section">
         <div className="container-lg">
           <div className="advantages-wrapper" data-aos="zoom-in">
-            <div className="advantages-content" >
+            <div className="advantages-content">
               {/* Section Subtitle */}
               <div className="interior-section-subtitle">
                 <span className="subtitle-mark"></span>

@@ -37,7 +37,7 @@ const products = [
   { title: "Grass Mat", link: "/#product-sec" },
   { title: "Wallpaper", link: "/#product-sec" },
   { title: "Customized Wallpaper", link: "/#product-sec" },
-  { title: "3D Wallpaper",  link: "/#product-sec" },
+  { title: "3D Wallpaper", link: "/#product-sec" },
 ];
 
 const company = [
@@ -51,23 +51,23 @@ const socialLinks = [
   {
     name: "Facebook",
     icon: "fa-facebook-f",
-    url: "https://www.facebook.com/",
+    url: "https://www.facebook.com/people/Muksha-Interior-BudhVihar/61594165963054/?rdid=rB0kIwIb0x3RywY2&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1RJn7nkDtH%2F",
   },
   {
     name: "Instagram",
     icon: "fa-instagram",
-    url: "https://www.instagram.com/",
+    url: "https://www.instagram.com/mukshainteriorfoam01?cplk=MjB4aDlzd3U0Y216",
   },
-  {
-    name: "LinkedIn",
-    icon: "fa-linkedin-in",
-    url: "https://www.linkedin.com/",
-  },
-  {
-    name: "YouTube",
-    icon: "fa-youtube",
-    url: "https://www.youtube.com/",
-  },
+  // {
+  //   name: "LinkedIn",
+  //   icon: "fa-linkedin-in",
+  //   url: "https://www.linkedin.com/",
+  // },
+  // {
+  //   name: "YouTube",
+  //   icon: "fa-youtube",
+  //   url: "https://www.youtube.com/",
+  // },
 ];
 
 const Footer = () => {
@@ -144,13 +144,20 @@ const Footer = () => {
           <div className="footer-column footer-contact">
             <h4>Company Info</h4>
 
-            <a href="mailto:abc@gmail.com">abc@gmail.com</a>
-
-            <a href="tel:+919220192901" className="footer-phone">
-              +91 92201 92901
+            <a href="mailto:mukshainterior@gmail.com">
+              <i className="fa-regular fa-envelope"></i>
+              <span> mukshainterior@gmail.com</span>
             </a>
 
-            <p>Budh Vihar, Delhi, India</p>
+            <a href="tel:+919220192901">
+              <i className="fa-solid fa-phone"></i>
+              <span> +91 92201 92901</span>
+            </a>
+
+            <p>
+              <i className="fa-solid fa-location-dot"></i>
+              <span> F-27, Budh Vihar Phase I, Budh Vihar, Delhi, 110085</span>
+            </p>
           </div>
 
           {/* Google Maps instead of company description */}
@@ -159,15 +166,15 @@ const Footer = () => {
 
             <div className="footer-map">
               <iframe
-                title="Muksha Interior Location Map"
-                src="https://www.google.com/maps?q=Delhi%2C%20India&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.4546532076206!2d77.0843081119424!3d28.705955680639434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d07aaa23b8577%3A0x277bddc93ed9371e!2sMuksha%20interior%20%26%20Foam%20wallpapers!5e0!3m2!1sen!2sin!4v1791971246250!5m2!1sen!2sin"
+                title="Muksha Interior Location"
                 width="100%"
-                height="250"
+                height="300"
                 style={{ border: 0 }}
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
                 allowFullScreen
-              ></iframe>
+                loading="lazy"
+                referrerPolicy="strict-origin-when-cross-origin"
+              />
             </div>
           </div>
         </div>

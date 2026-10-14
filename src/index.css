@@ -15,7 +15,7 @@
 
 .interior-about-section {
   width: 100%;
-  padding: 90px 0;
+  padding: 40px 0;
   background-color: #ffffff;
   font-family: "Arial", sans-serif;
 }
@@ -1396,6 +1396,7 @@ max-width: 750px;
   width: 100%;
   /* background: var(--white-color); */
   transition: box-shadow 0.3s ease;
+  margin-top: 5px;
 }
 
 .interior-navbar.nav-scrolled {
