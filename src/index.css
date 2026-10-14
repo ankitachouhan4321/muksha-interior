@@ -1396,7 +1396,6 @@ max-width: 750px;
   width: 100%;
   /* background: var(--white-color); */
   transition: box-shadow 0.3s ease;
-  margin-top: 5px;
 }
 
 .interior-navbar.nav-scrolled {
@@ -1421,6 +1420,7 @@ max-width: 750px;
   max-width: 150px;
   /* max-height: 75px; */
   object-fit: contain;
+      margin-top: 5px;
 }
 
 
