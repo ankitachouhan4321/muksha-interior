@@ -613,8 +613,8 @@
   }
 
   .service-card-content {
-    left: 25px;
-    right: 40px;
+    left: 10px;
+    right: 10px;
     bottom: 32px;
   }
 
@@ -1058,14 +1058,14 @@ max-width: 750px;
   }
 
   .advantages-wrapper {
-    padding: 250px 15px 20px;
+    padding: 30px 0px 20px;
     min-height: auto;
     border-radius: 20px;
     align-items: flex-end;
   }
 
   .advantages-content {
-    padding: 30px 25px;
+    padding: 30px 12px;
     border-radius: 18px;
   }
 
@@ -1127,7 +1127,7 @@ max-width: 750px;
 }
 
 .footer-newsletter h2 {
-  font-size: clamp(26px, 2.5vw, 30px);
+  font-size: clamp(22px, 2.1vw, 30px);
   line-height: 1.2;
   font-weight: 700;
   margin: 0;
@@ -1336,7 +1336,7 @@ max-width: 750px;
   }
 
   .footer-bottom {
-    padding: 20px;
+    padding: 10px;
     flex-direction: column;
     text-align: center;
     border-radius: 20px 20px 0 0;
@@ -1348,6 +1348,12 @@ max-width: 750px;
   }
 }
 
+@media (max-width:575px) {
+  .footer-social{
+    margin-top: 10px;
+  }
+  
+}
 @media (max-width: 480px) {
   .footer-subscribe-form {
     height: 54px;
@@ -1754,9 +1760,6 @@ max-width: 750px;
     max-width: 115px;
   }
 
-  .interior-nav-quote {
-    display: none;
-  }
 
   .interior-mobile-quote {
     display: inline-flex;

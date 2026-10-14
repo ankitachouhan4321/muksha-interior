@@ -274,7 +274,7 @@ const services = [
     description:
       "Create functional and visually appealing commercial spaces with modern layouts, stylish finishes, and customized interior solutions for your business.",
     image: "/img/ser-1.jpg",
-    link: "/services/interior-work-plan",
+    link: "https://wa.me/919220192901?text=Hello%20Muksha%20Interior%2C%20I%20am%20interested%20in%20your%20interior%20services.",
   },
 
   {
@@ -283,7 +283,7 @@ const services = [
     description:
       "Transform your home into a comfortable and elegant living space with personalized interior designs that reflect your lifestyle, preferences, and personality.",
     image: "/img/ser-2.jpg",
-    link: "/services/transforming-rooms",
+    link: "https://wa.me/919220192901?text=Hello%20Muksha%20Interior%2C%20I%20am%20interested%20in%20your%20interior%20services.",
   },
 
   {
@@ -292,7 +292,7 @@ const services = [
     description:
       "Design productive and professional workspaces with smart space planning, ergonomic layouts, modern furniture, and stylish interiors that inspire your team.",
     image: "/img/ser-3.jpg",
-    link: "/services/weaving-dreams",
+    link: "https://wa.me/919220192901?text=Hello%20Muksha%20Interior%2C%20I%20am%20interested%20in%20your%20interior%20services.",
   },
 
   {
@@ -301,7 +301,7 @@ const services = [
     description:
       "Create a beautiful and efficient kitchen with intelligent storage, practical layouts, modern finishes, and thoughtfully designed interiors for everyday cooking.",
     image: "/img/ser-4.jpg",
-    link: "/services/interior-decoration",
+    link: "https://wa.me/919220192901?text=Hello%20Muksha%20Interior%2C%20I%20am%20interested%20in%20your%20interior%20services.",
   },
 
   {
@@ -310,7 +310,7 @@ const services = [
     description:
       "Enhance your retail space with attractive product displays, organized layouts, stylish shelving, and inviting interiors that improve the customer shopping experience.",
     image: "/img/ser-5.jpg",
-    link: "/services/modern-living",
+    link: "https://wa.me/919220192901?text=Hello%20Muksha%20Interior%2C%20I%20am%20interested%20in%20your%20interior%20services.",
   },
 
   {
@@ -319,7 +319,7 @@ const services = [
     description:
       "Create modern and comfortable washrooms with space-saving layouts, elegant wall panels, coordinated finishes, and functional interior design solutions.",
     image: "/img/ser-6.jpg",
-    link: "/services/modern-living",
+    link: "https://wa.me/919220192901?text=Hello%20Muksha%20Interior%2C%20I%20am%20interested%20in%20your%20interior%20services.",
   },
 
   {
@@ -328,7 +328,7 @@ const services = [
     description:
       "Bring sophistication to your space with elegant design concepts, premium finishes, refined textures, statement décor, and beautifully coordinated interiors.",
     image: "/img/ser-7.jpg",
-    link: "/services/modern-living",
+    link: "https://wa.me/919220192901?text=Hello%20Muksha%20Interior%2C%20I%20am%20interested%20in%20your%20interior%20services.",
   },
 
   {
@@ -337,7 +337,7 @@ const services = [
     description:
       "Upgrade your bedroom with customized wardrobe designs featuring smart storage compartments, space-efficient layouts, modern finishes, and elegant styles.",
     image: "/img/ser-8.jpg",
-    link: "/services/modern-living",
+    link: "https://wa.me/919220192901?text=Hello%20Muksha%20Interior%2C%20I%20am%20interested%20in%20your%20interior%20services.",
   },
 ];
 
@@ -807,7 +807,7 @@ const App = () => {
 
                 <div className="product-content text-center">
                   <h5>WPC Louvers</h5>
-                  <a href="/products" className="interior-nav-quote px-4 py-2">
+                  <a href="https://wa.me/919220192901?text=Hello%20Muksha%20Interior%2C%20I%20am%20interested%20in%20your%20interior%20products" className="interior-nav-quote px-4 py-2">
                     Enquire Now
                     <i className="fa-brands fa-whatsapp "></i>
                   </a>
@@ -828,7 +828,7 @@ const App = () => {
 
                 <div className="product-content text-center">
                   <h5>PVC Panel</h5>
-                  <a href="/products" className="interior-nav-quote px-4 py-2">
+                  <a href="https://wa.me/919220192901?text=Hello%20Muksha%20Interior%2C%20I%20am%20interested%20in%20your%20interior%20products" className="interior-nav-quote px-4 py-2">
                     Enquire Now
                     <i className="fa-brands fa-whatsapp "></i>
                   </a>
@@ -849,7 +849,7 @@ const App = () => {
 
                 <div className="product-content text-center">
                   <h5>Fluted Panel</h5>
-                  <a href="/products" className="interior-nav-quote px-4 py-2">
+                  <a href="https://wa.me/919220192901?text=Hello%20Muksha%20Interior%2C%20I%20am%20interested%20in%20your%20interior%20products" className="interior-nav-quote px-4 py-2">
                     Enquire Now
                     <i className="fa-brands fa-whatsapp "></i>
                   </a>
@@ -870,7 +870,7 @@ const App = () => {
 
                 <div className="product-content text-center">
                   <h5>Soffit Panel</h5>
-                  <a href="/products" className="interior-nav-quote px-4 py-2">
+                  <a href="https://wa.me/919220192901?text=Hello%20Muksha%20Interior%2C%20I%20am%20interested%20in%20your%20interior%20products" className="interior-nav-quote px-4 py-2">
                     Enquire Now
                     <i className="fa-brands fa-whatsapp "></i>
                   </a>
@@ -891,7 +891,7 @@ const App = () => {
 
                 <div className="product-content text-center">
                   <h5>Grass Mat</h5>
-                  <a href="/products" className="interior-nav-quote px-4 py-2">
+                  <a href="https://wa.me/919220192901?text=Hello%20Muksha%20Interior%2C%20I%20am%20interested%20in%20your%20interior%20products" className="interior-nav-quote px-4 py-2">
                     Enquire Now
                     <i className="fa-brands fa-whatsapp "></i>
                   </a>
@@ -912,7 +912,7 @@ const App = () => {
 
                 <div className="product-content text-center">
                   <h5>Wallpaper</h5>
-                  <a href="/products" className="interior-nav-quote px-4 py-2">
+                  <a href="https://wa.me/919220192901?text=Hello%20Muksha%20Interior%2C%20I%20am%20interested%20in%20your%20interior%20products" className="interior-nav-quote px-4 py-2">
                     Enquire Now
                     <i className="fa-brands fa-whatsapp "></i>
                   </a>
@@ -933,7 +933,7 @@ const App = () => {
 
                 <div className="product-content text-center">
                   <h5>Customized Wallpaper</h5>
-                  <a href="/products" className="interior-nav-quote px-4 py-2">
+                  <a href="https://wa.me/919220192901?text=Hello%20Muksha%20Interior%2C%20I%20am%20interested%20in%20your%20interior%20products" className="interior-nav-quote px-4 py-2">
                     Enquire Now
                     <i className="fa-brands fa-whatsapp "></i>
                   </a>
@@ -953,7 +953,7 @@ const App = () => {
 
                 <div className="product-content text-center">
                   <h5>3D Wallpaper</h5>
-                  <a href="/products" className="interior-nav-quote px-4 py-2">
+                  <a href="https://wa.me/919220192901?text=Hello%20Muksha%20Interior%2C%20I%20am%20interested%20in%20your%20interior%20products" className="interior-nav-quote px-4 py-2">
                     Enquire Now
                     <i className="fa-brands fa-whatsapp "></i>
                   </a>
@@ -968,7 +968,7 @@ const App = () => {
       <section className="services-section" id="services-sec">
         <div className="services-container">
           <div className="services-header">
-            <div className="">
+            <div className="col-md-6 col-12">
               <div className="interior-section-subtitle">
                 <span className="subtitle-mark"></span>
                 Our Services
