@@ -3,29 +3,37 @@ import React, { useState, useEffect } from "react";
 
 const navLinks = [
   { title: "Home", link: "/" },
-  { title: "About Us", link: "/about" },
+  { title: "About Us", link: "/#about-sec" },
   {
     title: "Services",
-    link: "/services",
+    link: "/#services-sec",
     dropdown: [
-      { title: "Residential Interior", link: "/services/residential" },
-      { title: "Commercial Interior", link: "/services/commercial" },
-      { title: "Modular Kitchen", link: "/services/modular-kitchen" },
-      { title: "Space Planning", link: "/services/space-planning" },
+      { title: "Commercial Interior", link: "/#services-sec" },
+      { title: "Residential Interior", link: "/#services-sec" },
+      { title: "Office Kitchen", link: "/#services-sec" },
+      { title: "Kitchen Planning", link: "/#services-sec" },
+      { title: "Retail Shop Interior", link: "/#services-sec" },
+      { title: "Washroom Interior", link: "/#services-sec" },
+      { title: "Luxury Kitchen", link: "/#services-sec" },
+      { title: "Wardrobe Planning", link: "/#services-sec" },
     ],
   },
   {
     title: "Products",
     link: "/products",
     dropdown: [
-      { title: "Modular Furniture", link: "/products/furniture" },
-      { title: "Wardrobes", link: "/products/wardrobes" },
-      { title: "Kitchen Cabinets", link: "/products/kitchen-cabinets" },
-      { title: "Home Decor", link: "/products/home-decor" },
+      { title: "WPC Louvers", link: "/products/furniture" },
+      { title: "PVC Panel", link: "/products/wardrobes" },
+      { title: "Fluted Panel", link: "/products/kitchen-cabinets" },
+      { title: "Soffit Panel", link: "/products/home-decor" },
+      { title: "Grass Mat", link: "/products/furniture" },
+      { title: "Wallpaper", link: "/products/wardrobes" },
+      { title: "Customized Wallpaper", link: "/products/kitchen-cabinets" },
+      { title: "3D Wallpaper", link: "/products/home-decor" },
     ],
   },
-  { title: "Projects", link: "/projects" },
-  { title: "Contact Us", link: "/contact" },
+  { title: "FAQs", link: "/#faq-contact" },
+  { title: "Contact Us", link: "/#faq-contact" },
 ];
 
 const Navbar = () => {
@@ -34,8 +42,7 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 30);
-    handleScroll();
+const handleScroll = () => setScrolled(window.scrollY >= 100);    handleScroll();
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
@@ -48,9 +55,8 @@ const Navbar = () => {
 
   return (
     <header className={`interior-navbar ${scrolled ? "nav-scrolled" : ""}`}>
-      <div className="container">
+      <div className="container-lg">
         <div className="interior-nav-inner">
-
           {/* Logo */}
           <a href="/" className="interior-nav-logo" onClick={closeMenu}>
             <img src="/img/logo.jpg" alt="Company Logo" />
@@ -82,9 +88,7 @@ const Navbar = () => {
                         aria-label={`Toggle ${item.title} menu`}
                         aria-expanded={openDropdown === index}
                         onClick={() =>
-                          setOpenDropdown(
-                            openDropdown === index ? null : index
-                          )
+                          setOpenDropdown(openDropdown === index ? null : index)
                         }
                       >
                         <i className="fa-solid fa-chevron-down"></i>
@@ -123,7 +127,10 @@ const Navbar = () => {
 
           {/* Right Side CTA */}
           <div className="interior-nav-actions">
-            <a href="/contact" className="interior-nav-quote">
+            <a
+              href="https://wa.me/919220192901?text=Hello%20Muksha%20Interior%2C%20I%20am%20interested%20in%20your%20interior%20products%20and%20services."
+              className="interior-nav-quote"
+            >
               <span>Get a Quote</span>
               <span className="interior-quote-icon">
                 <i className="fa-solid fa-arrow-right"></i>
@@ -133,9 +140,7 @@ const Navbar = () => {
             {/* Mobile Hamburger */}
             <button
               type="button"
-              className={`interior-menu-toggle ${
-                menuOpen ? "active" : ""
-              }`}
+              className={`interior-menu-toggle ${menuOpen ? "active" : ""}`}
               onClick={() => setMenuOpen(!menuOpen)}
               aria-label={menuOpen ? "Close menu" : "Open menu"}
               aria-expanded={menuOpen}
@@ -146,7 +151,6 @@ const Navbar = () => {
               <span></span>
             </button>
           </div>
-
         </div>
       </div>
     </header>

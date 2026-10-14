@@ -3,49 +3,47 @@ import React from "react";
 const services = [
   {
     title: "Commercial Interior Design",
-    link: "/services/commercial-interior-design",
+    link: "/#product-sec",
   },
   {
     title: "Residential Interior Design",
-    link: "/services/residential-interior-design",
+    link: "/#product-sec",
   },
   { title: "Office Interior Design", link: "/services/office-interior-design" },
   {
     title: "Kitchen Interior Design",
-    link: "/services/kitchen-interior-design",
+    link: "/#product-sec",
   },
   {
     title: "Retail Shop Interior Design",
-    link: "/services/retail-shop-interior-design",
+    link: "/#product-sec",
   },
   {
     title: "Washroom Interior Design",
-    link: "/services/washroom-interior-design",
+    link: "/#product-sec",
   },
   { title: "Luxury Interior Design", link: "/services/luxury-interior-design" },
   {
     title: "Wardrobe Interior Design",
-    link: "/services/wardrobe-interior-design",
+    link: "/#product-sec",
   },
 ];
 
 const products = [
-  { title: "WPC Louvers", link: "/products/wpc-louvers" },
-  { title: "PVC Panel", link: "/products/pvc-panel" },
-  { title: "Fluted Panel", link: "/products/fluted-panel" },
-  { title: "Soffit Panel", link: "/products/soffit-panel" },
-  { title: "Grass Mat", link: "/products/grass-mat" },
-  { title: "Wallpaper", link: "/products/wallpaper" },
-  { title: "Customized Wallpaper", link: "/products/customized-wallpaper" },
-  { title: "3D Wallpaper", link: "/products/3d-wallpaper" },
+  { title: "WPC Louvers", link: "/#product-sec" },
+  { title: "PVC Panel", link: "/#product-sec" },
+  { title: "Fluted Panel", link: "/#product-sec" },
+  { title: "Soffit Panel", link: "/#product-sec" },
+  { title: "Grass Mat", link: "/#product-sec" },
+  { title: "Wallpaper", link: "/#product-sec" },
+  { title: "Customized Wallpaper", link: "/#product-sec" },
+  { title: "3D Wallpaper",  link: "/#product-sec" },
 ];
 
 const company = [
-  { title: "About Us", link: "/about" },
-  { title: "Our Projects", link: "/projects" },
-  { title: "Our Team", link: "/team" },
-  { title: "Blog", link: "/blog" },
-  { title: "Contact Us", link: "/contact" },
+  { title: "About Us", link: "/#about-sec" },
+
+  { title: "Contact Us", link: "/#contact-sec" },
 ];
 
 // Replace these links with actual company profiles.
