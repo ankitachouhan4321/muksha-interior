@@ -75,101 +75,6 @@ const initialForm = {
   message: "",
 };
 
-// const FAQContact = () => {
-//   const [activeFaq, setActiveFaq] = useState(0);
-//   const [formData, setFormData] = useState(initialForm);
-//   const [loading, setLoading] = useState(false);
-//   const [formStatus, setFormStatus] = useState({
-//     type: "",
-//     message: "",
-//   });
-
-const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
-
-const handleChange = (e) => {
-  const { name, value } = e.target;
-
-  setFormData((prev) => ({
-    ...prev,
-    [name]: value,
-  }));
-
-  if (formStatus.message) {
-    setFormStatus({ type: "", message: "" });
-  }
-};
-
-const handleSubmit = async (e) => {
-  e.preventDefault();
-
-  if (loading) return;
-
-  if (!/^[6-9]\d{9}$/.test(formData.phone.trim())) {
-    setFormStatus({
-      type: "error",
-      message: "Please enter a valid 10-digit Indian mobile number.",
-    });
-    return;
-  }
-
-  if (!accessKey) {
-    setFormStatus({
-      type: "error",
-      message:
-        "The enquiry form is not configured yet. Please contact us directly.",
-    });
-    return;
-  }
-
-  setLoading(true);
-  setFormStatus({ type: "", message: "" });
-
-  try {
-    const payload = {
-      access_key: accessKey,
-      subject: "New Enquiry - Muksha Interior Website",
-      from_name: "Muksha Interior Website",
-      botcheck: "",
-      name: formData.name,
-      phone: formData.phone,
-      email: formData.email,
-      city: formData.city,
-      interest: formData.interest,
-      message: formData.message,
-    };
-
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: JSON.stringify(payload),
-    });
-
-    const result = await response.json();
-
-    if (response.ok && result.success) {
-      setFormStatus({
-        type: "success",
-        message:
-          "Thank you! Your enquiry has been submitted successfully. Our team will contact you soon.",
-      });
-
-      setFormData({ ...initialForm });
-    } else {
-      throw new Error(result.message || "Unable to submit your enquiry.");
-    }
-  } catch (error) {
-    setFormStatus({
-      type: "error",
-      message: "Something went wrong. Please try again later.",
-    });
-  } finally {
-    setLoading(false);
-  }
-};
-
 const slides = [
   {
     id: 1,
@@ -192,6 +97,7 @@ const slides = [
     buttonText: "More About Us",
   },
 ];
+
 const testimonials = [
   {
     id: 1,
@@ -242,6 +148,7 @@ const testimonials = [
       "We wanted a kitchen design that looked elegant while remaining practical. The material suggestions and layout ideas helped us make better design decisions.",
   },
 ];
+
 // ================= FEATURES DATA =================
 
 const features = [
@@ -276,7 +183,6 @@ const services = [
     image: "/img/ser-1.jpg",
     link: "https://wa.me/919220192901?text=Hello%20Muksha%20Interior%2C%20I%20am%20interested%20in%20your%20interior%20services.",
   },
-
   {
     id: 2,
     title: "Residential Interior Design",
@@ -285,7 +191,6 @@ const services = [
     image: "/img/ser-2.jpg",
     link: "https://wa.me/919220192901?text=Hello%20Muksha%20Interior%2C%20I%20am%20interested%20in%20your%20interior%20services.",
   },
-
   {
     id: 3,
     title: "Office Interior Design",
@@ -294,7 +199,6 @@ const services = [
     image: "/img/ser-3.jpg",
     link: "https://wa.me/919220192901?text=Hello%20Muksha%20Interior%2C%20I%20am%20interested%20in%20your%20interior%20services.",
   },
-
   {
     id: 4,
     title: "Kitchen Interior Design",
@@ -303,7 +207,6 @@ const services = [
     image: "/img/ser-4.jpg",
     link: "https://wa.me/919220192901?text=Hello%20Muksha%20Interior%2C%20I%20am%20interested%20in%20your%20interior%20services.",
   },
-
   {
     id: 5,
     title: "Retail Shop Interior Design",
@@ -312,7 +215,6 @@ const services = [
     image: "/img/ser-5.jpg",
     link: "https://wa.me/919220192901?text=Hello%20Muksha%20Interior%2C%20I%20am%20interested%20in%20your%20interior%20services.",
   },
-
   {
     id: 6,
     title: "Washroom Interior Design",
@@ -321,7 +223,6 @@ const services = [
     image: "/img/ser-6.jpg",
     link: "https://wa.me/919220192901?text=Hello%20Muksha%20Interior%2C%20I%20am%20interested%20in%20your%20interior%20services.",
   },
-
   {
     id: 7,
     title: "Luxury Interior Design",
@@ -330,7 +231,6 @@ const services = [
     image: "/img/ser-7.jpg",
     link: "https://wa.me/919220192901?text=Hello%20Muksha%20Interior%2C%20I%20am%20interested%20in%20your%20interior%20services.",
   },
-
   {
     id: 8,
     title: "Wardrobe Interior Design",
@@ -404,7 +304,10 @@ const App = () => {
     message: "",
   });
 
-  const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+  // Web3Forms Access Key
+  const accessKey =
+    import.meta.env?.VITE_WEB3FORMS_ACCESS_KEY ||
+    "beb93908-b261-4db2-8760-499ca545f573";
 
   // Handle Input Changes
   const handleChange = (e) => {
@@ -450,6 +353,7 @@ const App = () => {
         access_key: accessKey,
         subject: "New Enquiry - Muksha Interior Website",
         from_name: "Muksha Interior Website",
+        botcheck: "",
         name: formData.name,
         phone: formData.phone,
         email: formData.email,
@@ -483,12 +387,13 @@ const App = () => {
     } catch (error) {
       setFormStatus({
         type: "error",
-        message: "Something went wrong. Please try again later.",
+        message: error.message || "Something went wrong. Please try again later.",
       });
     } finally {
       setLoading(false);
     }
   };
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -965,6 +870,7 @@ const App = () => {
                 </div>
               </div>
             </div>
+
             <div className="col-lg-3 col-sm-6" data-aos="fade-up">
               <div className="product-card">
                 <div className="product-img">
@@ -992,6 +898,7 @@ const App = () => {
         </div>
       </section>
       {/* Product Section End */}
+
       {/* =============== SERVICES SECTION START =============== */}
       <section className="services-section" id="services-sec">
         <div className="services-container">
@@ -1109,8 +1016,8 @@ const App = () => {
         </div>
       </section>
       {/* =============== SERVICES SECTION END =============== */}
-      {/* organization-sec start */}
 
+      {/* organization-sec start */}
       <section className="organization-section">
         <div className="container-lg">
           {/* Section Heading */}
@@ -1168,7 +1075,6 @@ const App = () => {
           </div>
         </div>
       </section>
-
       {/* organization-sec end */}
 
       {/* Advantages Section Start */}
