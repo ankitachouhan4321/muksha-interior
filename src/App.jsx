@@ -121,7 +121,7 @@ const workSteps = [
     title: "Understanding Your Vision",
     description:
       "We begin by understanding your ideas, lifestyle, space requirements, design preferences, and budget to create an interior plan that reflects your vision.",
-    image: "/img/work-1.jpg",
+    image: "/img/prc-1.jpg",
   },
   {
     id: 2,
@@ -129,7 +129,7 @@ const workSteps = [
     title: "Planning & Design",
     description:
       "Our team develops thoughtful design concepts, space layouts, colour combinations, and material selections to create a balanced and functional interior.",
-    image: "/img/work-2.jpg",
+    image: "/img/prc-2.jpg",
   },
   {
     id: 3,
@@ -137,7 +137,7 @@ const workSteps = [
     title: "Material Selection",
     description:
       "Explore suitable interior products and finishes, including WPC louvers, PVC panels, fluted panels, soft panels, grass mats, and customized wallpapers.",
-    image: "/img/work-3.jpg",
+    image: "/img/prc-3.jpg",
   },
   {
     id: 4,
@@ -145,7 +145,7 @@ const workSteps = [
     title: "Execution & Installation",
     description:
       "We help bring your design plans to life with carefully coordinated interior work, product installation, and attention to the details that matter.",
-    image: "/img/work-4.jpg",
+    image: "/img/prc-4.jpg",
   },
   {
     id: 5,
@@ -153,12 +153,11 @@ const workSteps = [
     title: "Final Touches",
     description:
       "We focus on the finishing details to create a cohesive, stylish, and comfortable space that aligns with your expectations and design vision.",
-    image: "/img/work-5.jpg",
+    image: "/img/prc-5.jpg",
   },
 ];
 
 // ================= APP COMPONENT =================
-
 
 const App = () => {
   const swiperRef = useRef(null);
@@ -412,7 +411,7 @@ const App = () => {
       </section>
       {/* =============== SERVICES SECTION END =============== */}
       {/* organization-sec start */}
-  
+
       <section className="organization-section">
         <div className="container-lg">
           {/* Section Heading */}
@@ -470,45 +469,191 @@ const App = () => {
           </div>
         </div>
       </section>
-      
+
       {/* organization-sec end */}
-      {/* counter start */}
+
       {/* Product Section Start */}
-      <section id="product-sec">
+      <section id="product-sec" className="py-lg-5 py-3">
         <div className="container-lg product-sec">
+          <div className="organization-heading">
+            <span className="organization-subtitle">
+              <span className="organization-subtitle-mark"></span>
+              OUR PRODUCTS
+            </span>
+            <h2>Premium Interior Products to Transform Every Space</h2>
+          </div>
           <div className="row g-4">
-            <div className="col-lg-4 col-md-6">
+            <div className="col-lg-3 col-sm-6">
               <div className="product-card">
                 <div className="product-img">
                   <img
-                    src="/img/Warehouse-Racks/1.png"
-                    alt="Warehouse Racks"
+                    src="/img/prod/1.jpg"
+                    alt="WPC Louvers"
                     className="img-fluid"
                     loading="lazy"
                   />
                 </div>
 
                 <div className="product-content text-center">
-                  <h5>Warehouse Racks</h5>
-                  <a href="/products" className="btn pilco-btn px-4 py-2">
-                    View Product
-                    <i className="bi bi-arrow-right ms-2"></i>
+                  <h5>WPC Louvers</h5>
+                  <a href="/products" className="interior-nav-quote px-4 py-2">
+                    Enquire Now
+                    <i className="fa-brands fa-whatsapp "></i>
                   </a>
                 </div>
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6">
-              {/* Add your second product here */}
+            <div className="col-lg-3 col-sm-6">
+              <div className="product-card">
+                <div className="product-img">
+                  <img
+                    src="/img/prod/2.jpg"
+                    alt="PVC Panel"
+                    className="img-fluid"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div className="product-content text-center">
+                  <h5>PVC Panel</h5>
+                  <a href="/products" className="interior-nav-quote px-4 py-2">
+                    Enquire Now
+                    <i className="fa-brands fa-whatsapp "></i>
+                  </a>
+                </div>
+              </div>
             </div>
 
-            <div className="col-lg-4 col-md-6">
-              {/* Add your third product here */}
+            <div className="col-lg-3 col-sm-6">
+              <div className="product-card">
+                <div className="product-img">
+                  <img
+                    src="/img/prod/3.jpg"
+                    alt="Fluted Panel"
+                    className="img-fluid"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div className="product-content text-center">
+                  <h5>Fluted Panel</h5>
+                  <a href="/products" className="interior-nav-quote px-4 py-2">
+                    Enquire Now
+                    <i className="fa-brands fa-whatsapp "></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-3 col-sm-6">
+              <div className="product-card">
+                <div className="product-img">
+                  <img
+                    src="/img/prod/4.jpg"
+                    alt="Soffit Panel"
+                    className="img-fluid"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div className="product-content text-center">
+                  <h5>Soffit Panel</h5>
+                  <a href="/products" className="interior-nav-quote px-4 py-2">
+                    Enquire Now
+                    <i className="fa-brands fa-whatsapp "></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-3 col-sm-6">
+              <div className="product-card">
+                <div className="product-img">
+                  <img
+                    src="/img/prod/5.jpg"
+                    alt="Grass Mat"
+                    className="img-fluid"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div className="product-content text-center">
+                  <h5>Grass Mat</h5>
+                  <a href="/products" className="interior-nav-quote px-4 py-2">
+                    Enquire Now
+                    <i className="fa-brands fa-whatsapp "></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-3 col-sm-6">
+              <div className="product-card">
+                <div className="product-img">
+                  <img
+                    src="/img/prod/6.jpg"
+                    alt="Wallpaper"
+                    className="img-fluid"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div className="product-content text-center">
+                  <h5>Wallpaper</h5>
+                  <a href="/products" className="interior-nav-quote px-4 py-2">
+                    Enquire Now
+                    <i className="fa-brands fa-whatsapp "></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-3 col-sm-6">
+              <div className="product-card">
+                <div className="product-img">
+                  <img
+                    src="/img/prod/7.jpg"
+                    alt="Customized Wallpaper"
+                    className="img-fluid"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div className="product-content text-center">
+                  <h5>Customized Wallpaper</h5>
+                  <a href="/products" className="interior-nav-quote px-4 py-2">
+                    Enquire Now
+                    <i className="fa-brands fa-whatsapp "></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-3 col-sm-6">
+              <div className="product-card">
+                <div className="product-img">
+                  <img
+                    src="/img/prod/8.jpg"
+                    alt="3D Wallpaper"
+                    className="img-fluid"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div className="product-content text-center">
+                  <h5>3D Wallpaper</h5>
+                  <a href="/products" className="interior-nav-quote px-4 py-2">
+                    Enquire Now
+                    <i className="fa-brands fa-whatsapp "></i>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
       {/* Product Section End */}
+
       {/* Advantages Section Start */}
       <section className="advantages-section">
         <div className="container-lg">
